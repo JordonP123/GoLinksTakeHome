@@ -7,7 +7,7 @@ function DisplayPage({ repos }){
 
     return(
         <div className='displayPageContainer'>
-        <ProfileInfo reposOwner={repos[0]}/>
+        <ProfileInfo/>
         <Repos repos={repos}/>
         </div>
     ) 

@@ -3,7 +3,7 @@ import "./loading.css";
 function Loading() {
   return (
     <div className="loadingScreen">
-      <i class="fa-solid fa-spinner loading"></i>
+      <i className="fa-solid fa-spinner loading"></i>
     </div>
   );
 }

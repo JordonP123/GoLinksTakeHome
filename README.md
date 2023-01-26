@@ -2,13 +2,13 @@
 Create a user interface to navigate the repositories and commits in Netflix’s Github. As a User, I would like to be able to see a list of Netflix’s repositories, and when I click on a repository, I want to be able to see the list of commits. 
 
 # Basic Requirements 
-- Create a scrollable list of Netflix’s repositories: https://api.github.com/orgs/Netflix/repos ● Each item in the repository list should show: 
-- Repo name 
-- Language 
-- Description 
-- Star Count 
-- Fork Count 
-- Date Created 
+- Create a scrollable list of Netflix’s repositories: https://api.github.com/orgs/Netflix/repos ● Each item in the repository list should show: - DONE
+- Repo name - DONE
+- Language - DONE
+- Description - DONE
+- Star Count - DONE
+- Fork Count - DONE
+- Date Created - DONE
 - This list should be sorted by Star Count in descending order - DONE
 - When clicking on an item in the list, it should show another list of the recent commits 
 
