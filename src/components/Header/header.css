@@ -1,0 +1,25 @@
+.headerContainer {
+  height: 10vh;
+  display: flex;
+  justify-content: space-between;
+}
+
+.gitHubLogo {
+  height: 100%;
+  text-align: center;
+  font-size: 4rem;
+  margin: 0.8% 0 0 3%;
+}
+
+.searchBar {
+  height: 8%;
+  align-self: center;
+  margin-right: 5%;
+  width: 20%;
+  border-radius: 80px;
+  border: 1px solid;
+  font-size: 1.2em;
+  padding: 1%;
+  display: flex;
+  justify-content: flex-end;
+}
