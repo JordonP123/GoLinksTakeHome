@@ -1,0 +1,15 @@
+.profileContainer{
+    display: flex;
+    flex-direction: column;
+}
+
+.avatarImg{
+    height: 30vh;
+    box-shadow: 0 0 5px 0;
+    border-radius: 50%;
+    padding: 0%;
+}
+
+.profileName{
+    font-size: 2.5rem;
+}

@@ -1,5 +1,4 @@
 import { useState, useEffect } from 'react'
-import "./App.css";
 import "./reset.css";
 import DisplayPage from './components/displayPage/DisplayPage'
 import Header from "./components/Header/Header";
