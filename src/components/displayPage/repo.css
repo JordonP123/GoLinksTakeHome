@@ -1,0 +1,6 @@
+.repoContainer{
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    flex-direction: column;
+}

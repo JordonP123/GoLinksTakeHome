@@ -5,7 +5,7 @@ function Header(){
 
     return(
         <div className="headerContainer">
-            <i class="fa-brands fa-github-alt gitHubLogo"></i>
+            <i className="fa-brands fa-github-alt gitHubLogo"></i>
             <SearchBar/>
         </div>
     )

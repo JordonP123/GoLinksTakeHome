@@ -9,7 +9,7 @@ Create a user interface to navigate the repositories and commits in Netflix’s 
 - Star Count 
 - Fork Count 
 - Date Created 
-- This list should be sorted by Star Count in descending order 
+- This list should be sorted by Star Count in descending order - DONE
 - When clicking on an item in the list, it should show another list of the recent commits 
 
 # Each item in this commits list should show: 
