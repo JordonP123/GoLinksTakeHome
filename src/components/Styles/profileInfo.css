@@ -1,15 +1,30 @@
 .profileContainer{
     display: flex;
     flex-direction: column;
+    box-shadow: 0 0 10px 0 var(--navy-shadow);
+    height: 50vh;
+    padding: 1%;
+    margin-top: 2%;
 }
 
 .avatarImg{
-    height: 30vh;
+    height: 35vh;
     box-shadow: 0 0 5px 0;
-    border-radius: 50%;
-    padding: 0%;
+    padding: .5%;
 }
 
 .profileName{
+    margin-top: 10%;
     font-size: 2.5rem;
+    width: 50%;
+}
+
+.profileName{
+    color: var(--lightest-slate);
+    transition: .5s;
+}
+
+.profileName:hover{
+    color: var(--green);
+    transition: .5s;
 }

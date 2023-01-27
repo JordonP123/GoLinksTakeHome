@@ -4,6 +4,7 @@
   height: 10vh;
   display: flex;
   justify-content: space-between;
+  box-shadow: 0 0 10px 0 var(--navy-shadow);
 }
 
 .gitHubLogoContainer{
@@ -46,7 +47,7 @@
   top: 35%;
 }
 
-button{
+.theRealFormButton{
   padding: 3%;
   background-color: transparent;
   position: absolute;
