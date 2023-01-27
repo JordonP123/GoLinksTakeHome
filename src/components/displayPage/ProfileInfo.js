@@ -1,21 +1,21 @@
 import './profileInfo.css'
 import { useEffect, useState } from 'react'
 
-function ProfileInfo(){
+function ProfileInfo({ repoName }){
     const [profileData, setProfileData] = useState({})
 
     useEffect(() => {
         const getProfileData = async() => {
-            const data = await fetch('https://api.github.com/users/Netflix')
+            const data = await fetch(`https://api.github.com/users/${repoName}`)
             const newData = await data.json()
 
             setProfileData(newData)
         }
         
         getProfileData()
-    }, [])
+    }, [repoName])
     
-    console.log(profileData)
+
     if(!profileData) return <>No data for this guy :D </>
 
     return (

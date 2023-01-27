@@ -4,9 +4,9 @@ function Repos({ repos }){
 
   return (
     <div className="reposContainer">
-      {repos.map((repo) => (
+      {repos.map((repo, index) => (
         <div key={repo.id}>
-          <Repo repo={repo} />
+          <Repo repo={repo} index ={index} />
         </div>
       ))};
     </div>
