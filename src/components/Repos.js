@@ -6,7 +6,7 @@ function Repos({ repos }){
     <div className="reposContainer">
       {repos.map((repo, index) => (
         <div key={repo.id}>
-          <Repo repo={repo} index ={index} />
+          <Repo repo={repo} index={index} />
         </div>
       ))};
     </div>

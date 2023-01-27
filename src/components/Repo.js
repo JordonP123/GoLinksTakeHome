@@ -1,8 +1,8 @@
-import "./repo.css";
+import "./Styles/repo.css";
 import { Link } from 'react-router-dom'
 
 function Repo({ repo, index }) {
-  const newDate = new Date().toLocaleString("en-US", repo.created_at);
+  const newDate = new Date(repo.created_at).toLocaleDateString();
 
   return (
     <>

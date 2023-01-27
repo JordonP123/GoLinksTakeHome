@@ -1,4 +1,4 @@
-import "./header.css";
+import "./Styles/header.css";
 import { Link } from "react-router-dom";
 import { useState } from "react";
 
@@ -17,7 +17,7 @@ function Header({ setRepoName }) {
 
   return (
     <div className="headerContainer">
-      <Link to="/">
+      <Link className="gitHubLogoContainer" to="/">
         <i className="fa-brands fa-github-alt gitHubLogo"></i>
       </Link>
       <form className="formContainer" onSubmit={handleSubmit}>
@@ -28,6 +28,8 @@ function Header({ setRepoName }) {
         type="text"
         placeholder="Search for a new repo..."
       />
+      <i class="fa-solid fa-magnifying-glass formButton"></i>
+      <button type="submit"></button>
       </form>
     </div>
   );

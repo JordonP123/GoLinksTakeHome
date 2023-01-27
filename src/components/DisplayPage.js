@@ -1,11 +1,11 @@
 import Repos from "./Repos";
 import ProfileInfo from "./ProfileInfo";
-import "./displayPage.css";
+import "./Styles/displayPage.css";
 
-function DisplayPage({ repos, repoName }) {
+function DisplayPage({ repos }) {
   return (
     <div className="displayPageContainer">
-      <ProfileInfo repoName={repoName} />
+      <ProfileInfo repos={repos} />
       <Repos repos={repos} />
     </div>
   );

@@ -1,4 +1,4 @@
-import './commit.css'
+import './Styles/commit.css'
 
 function Commit({ commit }){
     return(

@@ -1,9 +1,10 @@
 import { useState, useEffect } from 'react'
 import "./reset.css";
-import DisplayPage from './components/displayPage/DisplayPage'
-import Header from "./components/Header/Header";
-import Loading from './components/loadingScreen/Loading'
-import Commits from './components/displayPage/Commits'
+import './components/Styles/globalStyles.css'
+import DisplayPage from './components/DisplayPage'
+import Header from "./components/Header";
+import Loading from './components/Loading'
+import Commits from './components/Commits'
 import { Route, Routes } from "react-router-dom";
 
 
@@ -11,30 +12,27 @@ function App() {
 
   const [repos, setRepos] = useState([])
   const [repoName, setRepoName] = useState('Netflix')
-  const [updateProfile, setUpdateProfile] = useState(true)
+  const [errorMessage, setErrorMessage] = useState('')
 
   useEffect(() => {
       const getData = async () => {
         const data = await fetch(`https://api.github.com/orgs/${repoName}/repos`)
         const newData = await data.json()
 
-        newData.sort((a, b) => {
-          return b.stargazers_count - a.stargazers_count
-        })
-        setUpdateProfile(true)
-        setRepos(newData)
+            newData.sort((a, b) => {
+              return b.stargazers_count - a.stargazers_count
+            })
+            setRepos(newData)
+            setErrorMessage('')
       }
   
       getData()
   
       .catch(err => {
-        setUpdateProfile(false)
-        // setRepoName('Netflix')
-        console.error({ err })}
-        )
-    }, [repoName])
-
-    if(updateProfile === false)return <>This profile does not exists! :D</>
+        setErrorMessage('That repo does not exist D:')
+        console.error({ err })
+      })
+    }, [repoName], [])
     
   return (
     repos.length ? 
@@ -42,7 +40,7 @@ function App() {
       <Header setRepoName={setRepoName} repoName={repoName} />
       <Routes>
       <Route exact path='/' element={<DisplayPage repoName={repoName} repos={repos} />}/>
-      <Route path='/commits/:id' element={<Commits repos={repos}/>}/>
+      <Route path='/commits/:id' element={<Commits repos={repos} />}/>
       </Routes>
     </> : <Loading/>
   );

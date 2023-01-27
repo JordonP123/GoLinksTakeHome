@@ -10,15 +10,15 @@ Create a user interface to navigate the repositories and commits in Netflix’s 
 - Fork Count - DONE
 - Date Created - DONE
 - This list should be sorted by Star Count in descending order - DONE
-- When clicking on an item in the list, it should show another list of the recent commits 
+- When clicking on an item in the list, it should show another list of the recent commits -DONE
 
 # Each item in this commits list should show: 
-- Commit Title 
-- Committer username 
-- Commit hash 
-- Date Created 
+- Commit Title -DONE
+- Committer username -DONE
+- Commit hash -DONE
+- Date Created -DONE
 
 # Extras
 - Host the application on AWS, Heroku, Digital Ocean, or your own Web Host. Bonus Requirement 
-- As a user, I want to be able to type into an input an organization name other than Netflix and see a list of that organization’s repositories and commits instead. 
+- As a user, I want to be able to type into an input an organization name other than Netflix and see a list of that organization’s repositories and commits instead. - DONE
 - Any design additions, UI/UX improvements are always a plus. 

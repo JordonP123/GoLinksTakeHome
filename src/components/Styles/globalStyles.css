@@ -1,0 +1,26 @@
+@import './variables.css';
+
+body{
+    background-color: var(--navy);
+    color: var(--lightest-slate);
+    font-family: var(--font-sans);
+    opacity: 90%;
+}
+
+h2{
+    font-size: var(--fz-md);
+    color: var(--green);
+    font-family: var(--font-mono);
+}
+
+a{
+    text-decoration: none;
+    color: var(--navy);
+
+}
+
+a:hover{
+    text-decoration: underline;
+    transition: .3s;
+    color: var(--green);
+}

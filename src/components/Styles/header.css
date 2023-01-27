@@ -1,0 +1,57 @@
+@import './variables.css';
+
+.headerContainer {
+  height: 10vh;
+  display: flex;
+  justify-content: space-between;
+}
+
+.gitHubLogoContainer{
+  margin-top: 1%;
+  margin-left: 2%;
+}
+
+.gitHubLogo {
+  height: 100%;
+  text-align: center;
+  font-size: var(--fz-xl);
+  color: var(--lightest-slate);
+  transition: .5s;
+}
+
+.gitHubLogo:hover {
+  color: var(--green);
+  transition: .5s;
+}
+
+.formContainer{
+  margin-right: 5%;
+  margin-top: .5%;
+  position: relative;
+}
+
+.searchBar {
+  height: 2vh;
+  margin-top: 3%;
+  border-radius: 80px;
+  font-size: 1rem;
+  padding: 4%;
+  width: 20vw;
+  font-family: var(--font-sans);
+}
+
+.formButton{
+  position: absolute;
+  right: 0;
+  top: 35%;
+}
+
+button{
+  padding: 3%;
+  background-color: transparent;
+  position: absolute;
+  right: 0;
+  top: 27%;
+  border: transparent;
+}
+
