@@ -1,14 +1,26 @@
-import './Styles/commit.css'
+import "./Styles/commit.css";
 
-function Commit({ commit }){
-    return(
-        <div className="commitContainer">
-        <p>Message: {commit.commit.message}</p>
-        <p>Hash: {commit.sha}</p>
-        <p>Date: {commit.commit.author.date}</p>
-        <p>{commit.author ? `Username: ${commit.author.login}` : `Name: ${commit.commit.author.name}`}</p>
+function Commit({ commit }) {
+  return (
+    <div className="commitContainer">
+      <div className="messageContainer">{commit.commit.message}</div>
+      <div className="dateNameHashContainer">
+        <div className="dateNameContainer">
+          <div className="nameContainer">
+            <i class="fa-regular fa-user"></i>{" "}
+            {commit.author ? commit.author.login : commit.commit.author.name}
+          </div>
+          <div className="dateContainer">
+            <i class="fa-regular fa-calendar"></i>{" "}
+            {new Date(commit.commit.author.date).toLocaleDateString()}
+          </div>
         </div>
-    )
+        <div className="shaContainer">
+          <i class="fa-brands fa-dashcube"></i> {commit.sha}
+        </div>
+      </div>
+    </div>
+  );
 }
 
-export default Commit
+export default Commit;

@@ -20,23 +20,27 @@ function Repo({ repo, index }) {
             <h2>{repo.name}</h2>
           </Link>
           <p className="leftSideContent">
-            <i class="fa-solid fa-code"></i> {repo.language}
+            <i className="fa-solid fa-code hoverEmojis"></i> {repo.language}
           </p>
           <p className="leftSideContent">Created on {newDate}</p>
         </div>
         <div className="showDescriptionButtonContainer">
           <i
-            class={
+            className={
               !showDescription
-                ? "fa-solid fa-angle-down showDescriptionButton"
-                : "fa-solid fa-angle-up showDescriptionButton"
+                ? "fa-solid fa-angle-down showDescriptionButton hoverEmojis"
+                : "fa-solid fa-angle-up showDescriptionButton hoverEmojis"
             }
             onClick={onClick}
           ></i>
         </div>
         <div className="forkAndStarContainer">
-          <p><i class="fa-regular fa-star"></i>{' '}{repo.stargazers_count}</p>
-          <p><i class="fa-solid fa-code-fork"></i>{' '}{repo.forks_count}</p>
+          <div className="starsContainer">
+            <i className="fa-regular fa-star hoverEmojis"></i> {repo.stargazers_count}
+          </div>
+          <div className="forksContainer">
+            <i className="fa-solid fa-code-fork hoverEmojis"></i> {repo.forks_count}
+          </div>
         </div>
       </div>
       <div className="descriptionContainer">

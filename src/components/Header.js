@@ -3,17 +3,17 @@ import { Link } from "react-router-dom";
 import { useState } from "react";
 
 function Header({ setRepoName }) {
-  const [inputValue, setInputValue] = useState('')
+  const [inputValue, setInputValue] = useState("");
 
   const onChange = (e) => {
-    setInputValue(e.target.value)
+    setInputValue(e.target.value);
   };
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    setRepoName(inputValue)
-    setInputValue('')
-  }
+    setRepoName(inputValue);
+    setInputValue("");
+  };
 
   return (
     <div className="headerContainer">
@@ -21,15 +21,15 @@ function Header({ setRepoName }) {
         <i className="fa-brands fa-github-alt gitHubLogo"></i>
       </Link>
       <form className="formContainer" onSubmit={handleSubmit}>
-      <input
-        value={inputValue}
-        onChange={onChange}
-        className="searchBar"
-        type="text"
-        placeholder="Search for a new repo..."
-      />
-      <i className="fa-solid fa-magnifying-glass formButton"></i>
-      <button className="theRealFormButton" type="submit"></button>
+        <input
+          value={inputValue}
+          onChange={onChange}
+          className="searchBar"
+          type="text"
+          placeholder="Search for a new repo..."
+        />
+        <i className="fa-solid fa-magnifying-glass formButton"></i>
+        <button className="theRealFormButton" type="submit"></button>
       </form>
     </div>
   );

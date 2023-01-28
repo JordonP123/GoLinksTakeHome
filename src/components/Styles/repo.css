@@ -2,12 +2,9 @@
     margin-top: 7%;
 }
 
-.outerRepoContainer{
+.repoContainer{
     border-top: 1px solid var(--tint);
     margin-left: 2vw;
-}
-
-.repoContainer{
     height: 20%;
     padding: 2%;
     width: 55vw;
@@ -37,34 +34,41 @@
 
 .showDescriptionButtonContainer{
     position: absolute;
-    left: 45%;
+    left: 50%;
     top: 75%;
 }
 
 .showDescriptionButton{
-    color: var(--lightest-slate);
-    font-size: var(--fz-md);
+    color: var(--dark-slate);
+    font-size: var(--fz-sm);
     cursor: pointer;
-}
 
-.showDescriptionButton:hover{
-    color: var(--green);
-
-}
-
-.forkAndStarContainer{
-    margin-left: 3%;
 }
 
 .fa-star:hover{
-    color: var(--green);
     animation-name: star-spin;
     animation-duration: 1000ms;
     animation-iteration-count: infinite;
     animation-timing-function: linear; 
 }
 
+.fa-code-fork{
+    padding-left: 2px;
+    padding-right: 3px;
+}
 
+.forksContainer{
+    margin-top: 20%;
+}
+
+.hoverEmojis:hover{
+    color: var(--green)
+}
+
+.repoDescription{
+    padding: 0 0 2% 10%;
+    
+}
 
 @keyframes star-spin {
     from {
