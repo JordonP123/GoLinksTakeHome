@@ -2,7 +2,7 @@ import "./Styles/header.css";
 import { Link } from "react-router-dom";
 import { useState } from "react";
 
-function Header({ setRepoName }) {
+function Header({ setRepoName, errorMessage }) {
   const [inputValue, setInputValue] = useState("");
 
   const onChange = (e) => {
@@ -20,6 +20,7 @@ function Header({ setRepoName }) {
       <Link className="gitHubLogoContainer" to="/">
         <i className="fa-brands fa-github-alt gitHubLogo"></i>
       </Link>
+      <div className="formContainer">
       <form className="formContainer" onSubmit={handleSubmit}>
         <input
           value={inputValue}
@@ -27,8 +28,10 @@ function Header({ setRepoName }) {
           className="searchBar"
           type="text"
           placeholder="Search for a new repo..."
-        />
+          />
       </form>
+          <p className="errorMessage">{errorMessage}</p>
+          </div>
     </div>
   );
 }

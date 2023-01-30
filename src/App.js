@@ -19,16 +19,15 @@ function App() {
           `https://api.github.com/orgs/${repoName}/repos`
         );
         const newData = await data.json();
-
-        newData.sort((a, b) => {
-          return b.stargazers_count - a.stargazers_count;
-        });
-        setRepos(newData);
-        setErrorMessage("");
+          newData.sort((a, b) => {
+            return b.stargazers_count - a.stargazers_count;
+          });
+          setRepos(newData);
+          setErrorMessage("");
       };
 
       getData().catch((err) => {
-        setErrorMessage("That repo does not exist D:");
+        setErrorMessage(`${repoName} does not exist`)
         console.error({ err });
       });
     },
@@ -38,7 +37,7 @@ function App() {
 
   return repos.length ? (
     <>
-      <Header setRepoName={setRepoName} repoName={repoName} />
+      <Header setRepoName={setRepoName} errorMessage={errorMessage} />
       <Routes>
         <Route
           exact

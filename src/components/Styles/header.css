@@ -1,7 +1,7 @@
 @import './variables.css';
 
 .headerContainer {
-  height: 10vh;
+  height: 11vh;
   display: flex;
   justify-content: space-between;
   box-shadow: 0 0 10px 0 var(--navy-shadow);
@@ -39,6 +39,12 @@
   padding: 4%;
   width: 20vw;
   font-family: var(--font-sans);
+}
+
+.errorMessage{
+  color: red;
+  margin: 1%;
+  margin-left: 5%;
 }
 
 
