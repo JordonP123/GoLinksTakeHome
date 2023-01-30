@@ -1,5 +1,11 @@
-.displayPageContainer{
-    display: flex;
-    width: 80%;
-    margin: 0 auto;
+.displayPageContainer {
+  display: flex;
+  width: 80%;
+  margin: 0 auto;
+}
+
+@media screen and (max-width: 850px) {
+  .displayPageContainer {
+    flex-direction: column;
+  }
 }

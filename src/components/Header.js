@@ -28,8 +28,6 @@ function Header({ setRepoName }) {
           type="text"
           placeholder="Search for a new repo..."
         />
-        <i className="fa-solid fa-magnifying-glass formButton"></i>
-        <button className="theRealFormButton" type="submit"></button>
       </form>
     </div>
   );

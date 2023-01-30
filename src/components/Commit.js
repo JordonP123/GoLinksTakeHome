@@ -7,16 +7,16 @@ function Commit({ commit }) {
       <div className="dateNameHashContainer">
         <div className="dateNameContainer">
           <div className="nameContainer">
-            <i class="fa-regular fa-user"></i>{" "}
-            {commit.author ? commit.author.login : commit.commit.author.name}
+            <i className="fa-regular fa-user"></i>{" "}
+            <p>{commit.author ? commit.author.login : commit.commit.author.name}</p>
           </div>
           <div className="dateContainer">
-            <i class="fa-regular fa-calendar"></i>{" "}
-            {new Date(commit.commit.author.date).toLocaleDateString()}
+            <i className="fa-regular fa-calendar"></i>{" "}
+            <p>{new Date(commit.commit.author.date).toLocaleDateString()}</p>
           </div>
         </div>
         <div className="shaContainer">
-          <i class="fa-brands fa-dashcube"></i> {commit.sha}
+          <i className="fa-brands fa-dashcube"></i> <p>{commit.sha}</p>
         </div>
       </div>
     </div>

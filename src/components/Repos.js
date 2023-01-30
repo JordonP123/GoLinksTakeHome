@@ -9,7 +9,6 @@ function Repos({ repos }) {
           <Repo repo={repo} index={index} />
         </div>
       ))}
-      ;
     </div>
   );
 }

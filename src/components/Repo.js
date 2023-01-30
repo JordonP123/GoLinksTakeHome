@@ -17,7 +17,7 @@ function Repo({ repo, index }) {
       <div className="repoContainer">
         <div className="leftSideContainer">
           <Link to={`commits/${index}`}>
-            <h2>{repo.name}</h2>
+            <h2 className="repoName">{repo.name}</h2>
           </Link>
           <p className="leftSideContent">
             <i className="fa-solid fa-code hoverEmojis"></i> {repo.language}
@@ -36,10 +36,12 @@ function Repo({ repo, index }) {
         </div>
         <div className="forkAndStarContainer">
           <div className="starsContainer">
-            <i className="fa-regular fa-star hoverEmojis"></i> {repo.stargazers_count}
+            <i className="fa-regular fa-star hoverEmojis"></i>
+            <p>{repo.stargazers_count}</p>
           </div>
           <div className="forksContainer">
-            <i className="fa-solid fa-code-fork hoverEmojis"></i> {repo.forks_count}
+            <i className="fa-solid fa-code-fork hoverEmojis"></i>
+            <p>{repo.forks_count}</p>
           </div>
         </div>
       </div>

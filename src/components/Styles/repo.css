@@ -1,80 +1,110 @@
-.reposContainer{
-    margin-top: 7%;
+.reposContainer {
+  margin-top: 7%;
 }
 
-.repoContainer{
-    border-top: 1px solid var(--tint);
-    margin-left: 2vw;
-    height: 20%;
-    padding: 2%;
-    width: 55vw;
-    display: flex;
-    justify-content: space-between;
-    position: relative;
+.repoContainer {
+  border-top: 1px solid var(--tint);
+  margin-left: 2vw;
+  height: 20%;
+  padding: 2%;
+  width: 55vw;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
 }
 
-
-.leftSideContainer{
-    height: 12vh;
+.leftSideContainer {
+  height: 12vh;
 }
 
-.leftSideContent{
-    margin-top: 2vh;
+.leftSideContent {
+  margin-top: 2vh;
 }
 
-.repoDescription{
-    display: inline-block;
-    max-width: 70ch;
-    font-family: var(--font-mono);
+.repoDescription {
+  display: inline-block;
+  max-width: 70ch;
+  font-family: var(--font-mono);
 }
 
-.descriptionContainer{
-    text-align: center;
+.descriptionContainer {
+  text-align: center;
 }
 
-.showDescriptionButtonContainer{
-    position: absolute;
-    left: 50%;
-    top: 75%;
+.showDescriptionButtonContainer {
+  position: absolute;
+  left: 50%;
+  top: 75%;
 }
 
-.showDescriptionButton{
-    color: var(--dark-slate);
-    font-size: var(--fz-sm);
-    cursor: pointer;
-
+.showDescriptionButton {
+  color: var(--dark-slate);
+  font-size: var(--fz-sm);
+  cursor: pointer;
 }
 
-.fa-star:hover{
-    animation-name: star-spin;
-    animation-duration: 1000ms;
-    animation-iteration-count: infinite;
-    animation-timing-function: linear; 
+.fa-star:hover {
+  animation-name: star-spin;
+  animation-duration: 1000ms;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
 }
 
-.fa-code-fork{
-    padding-left: 2px;
+.fa-code-fork {
+  padding-right: 3px;
+  margin-left: 5%;
+}
+
+.fa-star{
     padding-right: 3px;
 }
 
+.forksContainer {
+  margin-top: 20%;
+}
+
+.hoverEmojis:hover {
+  color: var(--green);
+}
+
+.repoDescription {
+  padding: 0 0 2% 10%;
+}
+
+.starsContainer {
+    display: flex;
+}
+
 .forksContainer{
-    margin-top: 20%;
-}
-
-.hoverEmojis:hover{
-    color: var(--green)
-}
-
-.repoDescription{
-    padding: 0 0 2% 10%;
-    
+    display: flex;
 }
 
 @keyframes star-spin {
-    from {
-      transform: rotate(0deg);
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media screen and (max-width: 850px) {
+  .repoContainer {
+    width: 100%;
+    margin-left: 0;
+  }
+}
+
+@media screen and (max-width: 600px) {
+    h2 {
+        font-size: 1.2rem;
     }
-    to {
-      transform: rotate(360deg);
+
+    i{
+        font-size: .8rem;
     }
-  } 
+
+    p{
+        font-size: .8rem;
+    }
+}

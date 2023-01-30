@@ -41,18 +41,10 @@
   font-family: var(--font-sans);
 }
 
-.formButton{
-  position: absolute;
-  right: 0;
-  top: 35%;
-}
 
-.theRealFormButton{
-  padding: 3%;
-  background-color: transparent;
-  position: absolute;
-  right: 0;
-  top: 27%;
-  border: transparent;
+@media screen and (max-width: 850px) {
+  .searchBar {
+    width: 40vw;
+    padding: 3%;
+  }
 }
-
