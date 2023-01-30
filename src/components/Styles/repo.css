@@ -79,6 +79,15 @@
     display: flex;
 }
 
+.headerForRepoCotnainer{
+  color: var(--white);
+  margin: 2%;
+  display: flex;
+  margin-left: 5%;
+  font-size: 2.5rem;
+  margin-bottom: 5%;
+}
+
 @keyframes star-spin {
   from {
     transform: rotate(0deg);
@@ -107,4 +116,14 @@
     p{
         font-size: .8rem;
     }
+
+    .headerForRepoCotnainer{
+      font-size: 1.8rem;
+    }
+}
+
+@media screen and (max-width: 400px) {
+  .showDescriptionButtonContainer{
+    top: 85%;
+  }
 }
